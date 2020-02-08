@@ -1,0 +1,175 @@
+[
+    {
+        "id": 1,
+        "title": "Sprint Planning #1",
+        "content": [
+            {
+                "id": "D01",
+                "description": "Definir tecnologías"
+            },
+            {
+                "id": "D02",
+                "description": "Diseño de datos"
+            },
+            {
+                "id": "D03",
+                "description": "Creación de servidor"
+            },
+            {
+                "id":"D04",
+                "description": "Creación Mockup base"
+            },
+            {
+                "id":"D05",
+                "description": "Creación de Base de datos en el servidor local"
+            },
+            {
+                "id":"D06",
+                "description": "Recopilación de datos"
+            },
+            {
+                "id": "HU01",
+                "description": "Hacer Get All"
+            },
+            {
+                "id": "HU02",
+                "description": "Hacer Get One"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Tasks",
+        "content": [
+            {
+                "backlogId": "D01",
+                "id": 1,
+                "description": "Revisión de lenguajes / frameworks para frontend según las necesidades planteadas",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "D01",
+                "id": 2,
+                "description": "Revisión de lenguajes / frameworks para backend según las necesidades planteadas.",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "D01",
+                "id": 3,
+                "description": "Revisión de bases de datos (Sql o NoSql) según las necesidades y plataformas para despliegue.",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "D02",
+                "id": 4,
+                "description": "Definición de estructura de datos según la información disponible en el sitio oficial (Formato de los objetos JSON)",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "D02",
+                "id": 5,
+                "description": "Creación de archivo JSON con el formato y los campos qué contendrá que ya fueron definidos.",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "D03",
+                "id": 6,
+                "description": "Inicializar el proyecto con las dependencias necesarias",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "D03",
+                "id": 7,
+                "description": "Crear el archivo que corre el servidor",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "D03",
+                "id": 8,
+                "description": "Preparar la configuración de variables de entorno",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "D03",
+                "id": 9,
+                "description": "Verificar que el servidor esté escuchando correctamente en el puerto indicado con la variable de entorno.",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId":"D04",
+                "id": 10,
+                "description": "Crear JSON con la estructura requerida y captura la información de al menos 3 campeones",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId":"D05",
+                "id": 11,
+                "description": "Instalación de Base de datos",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId":"D05",
+                "id": 12,
+                "description": "Generación de la cadena de conexión para que sea puesta como variable de entorno.",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId":"D06",
+                "id": 13,
+                "description": "Creación de archivo JSON donde contenga la información de los campeones",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId":"D06",
+                "id": 14,
+                "description": "Revisión de que la información sea correcta",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "HU01",
+                "id": 15,
+                "description": "Creación de endpoint para recibir petición GET (Todos)",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "HU01",
+                "id": 16,
+                "description": "Verificar funcionamiento de endpoint con Postman",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "HU02",
+                "id": 17,
+                "description": "Creación de endpoint para recibir petición GET (Sólo uno)",
+                "inCharge": "Luis Lira"
+            },
+            {
+                "backlogId": "HU02",
+                "id": 18,
+                "description": "Verificar funcionamiento de endpoint con Postman",
+                "inCharge": "Luis Lira"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "In process",
+        "content": [
+           
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Testing",
+        "content": [
+            
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Done",
+        "content": [
+
+        ]
+    }
+]

@@ -1,0 +1,19 @@
+.Column {
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.Column__title {
+    background-color: var(--main-color);
+    color: white;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 10px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.Column__content {
+    padding: 10px;
+}
