@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Column } from '../Column'
+import { Card } from '../Card'
 import InitialState from '../../Utils/Mokcup.json'
 import './styles.css'
 
@@ -13,7 +13,7 @@ export const PlanningGrid = () => {
     return (
         <div className="PlanningGrid">
             {
-                data.map(item => <Column {...item} key={item.id} />)
+                data.map(item => <Card {...item} key={item.id} />)
             }
         </div>
     )

@@ -2,6 +2,7 @@
 
 :root {
   --main-color: #0079BF;
+  --main-color-darker: rgb(0, 86, 136, 1);
   --main-color-transparent: rgba(0, 121, 191, 0.1)
 }
 
@@ -11,4 +12,13 @@ body {
   font-family: 'Roboto', 'Helvetica', sans-serif, system-ui;
   background-color: var(--main-color-transparent);
   height: 100vh;
+}
+
+
+.completed {
+  background-color: lightgreen;
+}
+
+.incomplete {
+  background-color: lightcoral;
 }

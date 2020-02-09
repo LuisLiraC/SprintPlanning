@@ -1,76 +1,53 @@
 [
     {
-        "id": 1,
-        "title": "Sprint Planning #1",
-        "content": [
+        "id": "D01",
+        "description": "Definir tecnologías",
+        "tasks": [
             {
-                "id": "D01",
-                "description": "Definir tecnologías"
-            },
-            {
-                "id": "D02",
-                "description": "Diseño de datos"
-            },
-            {
-                "id": "D03",
-                "description": "Creación de servidor"
-            },
-            {
-                "id":"D04",
-                "description": "Creación Mockup base"
-            },
-            {
-                "id":"D05",
-                "description": "Creación de Base de datos en el servidor local"
-            },
-            {
-                "id":"D06",
-                "description": "Recopilación de datos"
-            },
-            {
-                "id": "HU01",
-                "description": "Hacer Get All"
-            },
-            {
-                "id": "HU02",
-                "description": "Hacer Get One"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Tasks",
-        "content": [
-            {
-                "backlogId": "D01",
                 "id": 1,
                 "description": "Revisión de lenguajes / frameworks para frontend según las necesidades planteadas",
                 "inCharge": "Luis Lira"
             },
             {
-                "backlogId": "D01",
                 "id": 2,
                 "description": "Revisión de lenguajes / frameworks para backend según las necesidades planteadas.",
                 "inCharge": "Luis Lira"
             },
             {
-                "backlogId": "D01",
                 "id": 3,
                 "description": "Revisión de bases de datos (Sql o NoSql) según las necesidades y plataformas para despliegue.",
                 "inCharge": "Luis Lira"
-            },
+            }
+        ],
+        "comments": [
+            "Se buscará información sobre las tecnologías que permitan la creación ágil de la API"
+        ],
+        "conditions": []
+    },
+    {
+        "id": "D02",
+        "description": "Diseño de datos",
+        "tasks": [
             {
-                "backlogId": "D02",
                 "id": 4,
                 "description": "Definición de estructura de datos según la información disponible en el sitio oficial (Formato de los objetos JSON)",
                 "inCharge": "Luis Lira"
             },
             {
-                "backlogId": "D02",
                 "id": 5,
                 "description": "Creación de archivo JSON con el formato y los campos qué contendrá que ya fueron definidos.",
                 "inCharge": "Luis Lira"
-            },
+            }
+        ],
+        "comments": [
+            "Se definirá de qué manera se organizará el formato JSON para la información de cada elemento de la BDD."
+        ],
+        "conditions": []
+    },
+    {
+        "id": "D03",
+        "description": "Creación de servidor",
+        "tasks": [
             {
                 "backlogId": "D03",
                 "id": 6,
@@ -94,37 +71,77 @@
                 "id": 9,
                 "description": "Verificar que el servidor esté escuchando correctamente en el puerto indicado con la variable de entorno.",
                 "inCharge": "Luis Lira"
-            },
+            }
+        ],
+        "comments": [
+            "Se levantará en local el servidor y se probará que funcione correctamente."
+        ],
+        "conditions": []
+    },
+    {
+        "id": "D04",
+        "description": "Creación Mockup base",
+        "tasks": [
             {
-                "backlogId":"D04",
+                "backlogId": "D04",
                 "id": 10,
                 "description": "Crear JSON con la estructura requerida y captura la información de al menos 3 campeones",
                 "inCharge": "Luis Lira"
-            },
+            }
+        ],
+        "comments": [
+            "Se creará un archivo JSON con el formato definido de datos para trabajar durante el desarrollo."
+        ],
+        "conditions": []
+    },
+    {
+        "id": "D05",
+        "description": "Creación de Base de datos en el servidor local",
+        "tasks": [
             {
-                "backlogId":"D05",
+                "backlogId": "D05",
                 "id": 11,
                 "description": "Instalación de Base de datos",
                 "inCharge": "Luis Lira"
             },
             {
-                "backlogId":"D05",
+                "backlogId": "D05",
                 "id": 12,
                 "description": "Generación de la cadena de conexión para que sea puesta como variable de entorno.",
                 "inCharge": "Luis Lira"
-            },
+            }
+        ],
+        "comments": [
+            "Se creará la instancia de la base de datos, así como determinar la cadena de conexión a la misma."
+        ],
+        "conditions": []
+    },
+    {
+        "id": "D06",
+        "description": "Recopilación de datos",
+        "tasks": [
             {
-                "backlogId":"D06",
+                "backlogId": "D06",
                 "id": 13,
                 "description": "Creación de archivo JSON donde contenga la información de los campeones",
                 "inCharge": "Luis Lira"
             },
             {
-                "backlogId":"D06",
+                "backlogId": "D06",
                 "id": 14,
                 "description": "Revisión de que la información sea correcta",
                 "inCharge": "Luis Lira"
-            },
+            }
+        ],
+        "comments": [
+            "Se creará un archivo con un Arreglo de objetos en JSON para recopilar la información."
+        ],
+        "conditions": []
+    },
+    {
+        "id": "HU01",
+        "description": "Hacer Get All",
+        "tasks": [
             {
                 "backlogId": "HU01",
                 "id": 15,
@@ -136,7 +153,23 @@
                 "id": 16,
                 "description": "Verificar funcionamiento de endpoint con Postman",
                 "inCharge": "Luis Lira"
-            },
+            }
+        ],
+        "comments": [
+            "Los usuarios podrán obtener toda la información de la Tabla/Colección campeones."
+        ],
+        "conditions": [
+            "La información de cada campeón debe estar en formato JSON",
+            "Todos los objetos deben venir en un arreglo",
+            "En caso de error, debe regresar un objeto con el código y mensaje de error",
+            "La API debe permitir la petición desde un dominio y desde localhost",
+            "El endpoint debe comenzar desde “api/”"
+        ]
+    },
+    {
+        "id": "HU02",
+        "description": "Hacer Get One",
+        "tasks": [
             {
                 "backlogId": "HU02",
                 "id": 17,
@@ -149,27 +182,17 @@
                 "description": "Verificar funcionamiento de endpoint con Postman",
                 "inCharge": "Luis Lira"
             }
-        ]
-    },
-    {
-        "id": 3,
-        "title": "In process",
-        "content": [
-           
-        ]
-    },
-    {
-        "id": 4,
-        "title": "Testing",
-        "content": [
-            
-        ]
-    },
-    {
-        "id": 5,
-        "title": "Done",
-        "content": [
-
+        ],
+        "comments": [
+            "Los usuarios podrán obtener sólo los datos de un solo campeón de la Tabla/Colección campeones"
+        ],
+        "conditions": [
+            "La información debe estar en formato JSON",
+            "En caso de error, debe regresar un objeto con el código y mensaje de error",
+            "La API debe permitir la petición desde un dominio y desde localhost",
+            "El endpoint debe comenzar desde “api/campeones/”",
+            "El endpoint para cada campeón debe ser con su nombre",
+            "En caso de que el campeón tengo caracteres especiales o espacio en su nombre, estos serán eliminados y se hará como una sola palabra"
         ]
     }
 ]
