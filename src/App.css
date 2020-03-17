@@ -14,11 +14,13 @@ body {
   height: 100vh;
 }
 
-
-.completed {
-  background-color: lightgreen;
+.members {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
 }
 
-.incomplete {
-  background-color: lightcoral;
+.members span {
+  margin: 15px 0;
 }

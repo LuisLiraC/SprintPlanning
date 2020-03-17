@@ -1,6 +1,23 @@
 .PlanningGrid {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
+  padding: 30px 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color-darker);
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
