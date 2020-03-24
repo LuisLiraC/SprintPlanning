@@ -1,5 +1,5 @@
-import React from 'react';
-import './styles.css';
+import React from 'react'
+import './styles.css'
 
 export const Task = ({ backlogId, description, inCharge }) => {
   return (
@@ -9,5 +9,5 @@ export const Task = ({ backlogId, description, inCharge }) => {
         <b>Encargado:</b> {inCharge}
       </p>
     </div>
-  );
-};
+  )
+}

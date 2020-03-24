@@ -5,6 +5,7 @@
             {
                 "id": "D01",
                 "description": "Definir tecnologías",
+                "completed": true,
                 "tasks": [
                     {
                         "id": 1,
@@ -30,6 +31,7 @@
             {
                 "id": "D02",
                 "description": "Diseño de datos",
+                "completed": true,
                 "tasks": [
                     {
                         "id": 4,
@@ -50,6 +52,7 @@
             {
                 "id": "D03",
                 "description": "Creación de servidor",
+                "completed": true,
                 "tasks": [
                     {
                         "backlogId": "D03",
@@ -84,6 +87,7 @@
             {
                 "id": "D04",
                 "description": "Creación Mockup base",
+                "completed": true,
                 "tasks": [
                     {
                         "backlogId": "D04",
@@ -100,6 +104,7 @@
             {
                 "id": "D05",
                 "description": "Creación de Base de datos en el servidor local",
+                "completed": false,
                 "tasks": [
                     {
                         "backlogId": "D05",
@@ -120,8 +125,55 @@
                 "conditions": []
             },
             {
+                "id": "D10",
+                "description": "Creación de Web Scraper",
+                "completed": true,
+                "tasks": [
+                    {
+                        "backlogId": "D10",
+                        "id": 50,
+                        "description": "Análisis de las páginas de las que se extraerá la información",
+                        "inCharge": "Luis Lira"
+                    },
+                    {
+                        "backlogId": "D10",
+                        "id": 51,
+                        "description": "Instalación de Puppetter para creación de web scraper",
+                        "inCharge":"Luis Lira"
+                    },
+                    {
+                        "backlogId": "D10",
+                        "id": 52,
+                        "description": "Sraper para obtener nombre de campeones",
+                        "inCharge":"Luis Lira"
+                    },
+                    {
+                        "backlogId": "D10",
+                        "id": 53,
+                        "description": "Sraper para obtener información de campeones extrayendo los nombres del archivo .json generado con los nombres",
+                        "inCharge":"Luis Lira"
+                    },
+                    {
+                        "backlogId": "D10",
+                        "id": 54,
+                        "description": "Creación de script para unir la información de todos los .json creados para cada campeón",
+                        "inCharge":"Luis Lira"
+                    }
+                ],
+                "comments": [
+                    "Se creará un Web Scraper encargado de obtener la información de los campeones en las páginas de League of Legends"
+                ],
+                "conditions": [
+                    "El Web scraper primero debe crear un archivo .json con la información de los nombres de todos los campeones",
+                    "Los nombres de los campeones que contengan con commila simple (') y espacios ( ) deberán ser sustituidos esos caracteres por guiones medios (-).",
+                    "La información recopilada debe guardarse en el mismo formato que se específico en el diseño de la estructura de datos en formato .json",
+                    "Al final el web scraper deberá contener un script para hacer un merge de todos los archivos generados."
+                ]
+            },
+            {
                 "id": "D06",
                 "description": "Recopilación de datos",
+                "completed": false,
                 "tasks": [
                     {
                         "backlogId": "D06",
@@ -144,6 +196,7 @@
             {
                 "id": "HU01",
                 "description": "Creación de petición HTTP GET (all)",
+                "completed": true,
                 "tasks": [
                     {
                         "backlogId": "HU01",
@@ -175,6 +228,7 @@
             {
                 "id": "HU02",
                 "description": "Creación de petición HTTP GET (one)",
+                "completed": true,
                 "tasks": [
                     {
                         "backlogId": "HU02",
@@ -208,6 +262,7 @@
             {
                 "id": "HU03",
                 "description": "Simular petición HTTP PUT hacia la API",
+                "completed": false,
                 "tasks": [
                     {
                         "backlogId": "HU03",
@@ -236,6 +291,7 @@
             {
                 "id": "HU04",
                 "description": "Simular petición HTTP POST hacia la API",
+                "completed": false,
                 "tasks": [
                     {
                         "backlogId": "HU04",
@@ -264,6 +320,7 @@
             {
                 "id": "HU05",
                 "description": "Simular petición HTTP DELETE hacia la API",
+                "completed": false,
                 "tasks": [
                     {
                         "backlogId": "HU05",
@@ -297,6 +354,7 @@
             {
                 "id": "D07",
                 "description": "Creación de documentación de la API",
+                "completed": false,
                 "tasks": [
                     {
                         "backlogId": "D07",
@@ -332,6 +390,7 @@
             {
                 "id": "HU06",
                 "description": "Simular petición HTTP DELETE hacia la API",
+                "completed": false,
                 "tasks": [
                     {
                         "backlogId": "HU06",
@@ -381,6 +440,7 @@
             {
                 "id": "D08",
                 "description": "Llenado de BDD con toda la información recopilada de los campeones.",
+                "completed": false,
                 "tasks": [
                     {
                         "backlogId": "D08",
@@ -398,6 +458,7 @@
             {
                 "id": "HU07",
                 "description": "Creación de documentación de la API",
+                "completed": false,
                 "tasks": [
                     {
                         "backlogId": "HU07",
@@ -473,6 +534,7 @@
             {
                 "id": "HU08",
                 "description": "Recuadro para poder probar la API sin salir del sitio",
+                "completed": false,
                 "tasks": [
                     {
                         "backlogId": "HU08",
@@ -506,6 +568,7 @@
             {
                 "id": "D09",
                 "description": "Despliegue de la aplicación",
+                "completed": false,
                 "tasks": [
                     {
                         "backlogId": "D09",
@@ -515,7 +578,7 @@
                     },
                     {
                         "backlogId": "D09",
-                        "id": 48,
+                        "id": 49,
                         "description": "Despliegue de la aplicación en el hosting gratuito que se encontró",
                         "inCharge": "Luis Lira"
                     }

@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { Card } from '../Card';
-import InitialState from '../../Utils/Mokcup.json';
-import './styles.css';
+import React, { useState, useEffect } from 'react'
+import { Card } from '../Card'
+import InitialState from '../../Utils/Mokcup.json'
+import './styles.css'
 
 export const PlanningGrid = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([])
 
   useEffect(() => {
-    setData(InitialState);
-  }, [data]);
+    setData(InitialState)
+  }, [data])
 
   return (
     <>
@@ -22,8 +22,8 @@ export const PlanningGrid = () => {
               ))}
             </div>
           </section>
-        );
+        )
       })}
     </>
-  );
-};
+  )
+}

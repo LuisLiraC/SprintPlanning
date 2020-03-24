@@ -1,17 +1,18 @@
-import React from 'react';
-import { Task } from '../Task';
-import './styles.css';
+import React from 'react'
+import { Task } from '../Task'
+import './styles.css'
 
 export const Card = ({
   id,
   description,
   tasks,
   comments = [],
-  conditions = []
+  conditions = [],
+  completed
 }) => {
   return (
     <div className="Card">
-      <h4 className="Card__title">
+      <h4 className={`Card__title ${completed ? 'completed' : ''}`}>
         {id} - {description}
       </h4>
       <div className="Card__content">
@@ -45,5 +46,5 @@ export const Card = ({
         )}
       </div>
     </div>
-  );
-};
+  )
+}
