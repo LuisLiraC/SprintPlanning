@@ -104,7 +104,7 @@
             {
                 "id": "D05",
                 "description": "Creación de Base de datos en el servidor local",
-                "completed": false,
+                "completed": true,
                 "tasks": [
                     {
                         "backlogId": "D05",
@@ -173,7 +173,7 @@
             {
                 "id": "D06",
                 "description": "Recopilación de datos",
-                "completed": false,
+                "completed": true,
                 "tasks": [
                     {
                         "backlogId": "D06",
